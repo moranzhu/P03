@@ -1,0 +1,135 @@
+header{
+  width:100%;
+  display: flex;
+  margin-top: 1.5em;
+  margin-bottom: 1.2em;
+  letter-spacing: 0.08em;
+}
+#headertext{
+  font-size: 1.5em;
+  margin:auto;
+}
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.nav{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+.nav-item{
+  padding: 0 1.5em 0 1.5em;
+  display: inline-block;
+}
+.nav-item a{
+  padding-bottom: 0.1em;
+  text-decoration: none;
+  color: #4B4E7A;
+}
+.nav-item a:hover, .nav-item a:focus{
+  color: #334595;
+  border-bottom: 0.1em solid #334595;
+}
+
+section{
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+h2{
+  font-size: 1.3em;
+  padding-bottom: 0.2em;
+  border-bottom: 0.1em solid #4B4E7A;
+  margin-bottom: 1.2em;
+}
+.oneelement{
+  margin: 0;
+  margin-bottom: 2.5em;
+}
+.codetitle{
+  color: #8793A7;
+  margin: 0.8em 0;
+}
+code{
+  background-color: #E1E4EF;
+  display: block;
+  margin-right: 2em;
+}
+.mainheading{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1em;
+  font-size: 1.4em;
+  letter-spacing: 0.06em;
+}
+.subheading{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1em;
+  border: none;
+  font-size: 1.3em;
+}
+.thirdheading{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1em;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.paragraph{
+  font-size: 1em;
+  line-height: 1.5em;
+  width: 36em;
+}
+.emphasized{
+  font-style: italic;
+  font-weight: 600;
+  color: #7086FB;
+}
+.intext_link{
+  color: #333;
+}
+.intext_link:hover{
+  color: #4B4E7A;
+  font-weight: 600;
+}
+.nav-button{
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #333;
+  padding-bottom: 0.1em;
+  padding-left: 0.15em;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-out;
+  -ms-transition:color 0.3s ease-out;
+}
+.nav-button:hover{
+  color: #666;
+  border-bottom: 0.1em solid #666;
+}
+
+@media (max-width:43.8em) {
+  .nav{
+    justify-content: center;
+  }
+  .nav-item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.4em;
+  }
+  .paragraph{
+    width: 68%;
+  }
+}
+
+@media (max-width:32.5em) {
+  .paragraph{
+    width: 90%;
+  }
+}

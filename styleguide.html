@@ -4,69 +4,108 @@
     <meta charset="utf-8">
     <meta name="viewport" content ="width=device-width, initial-scale=1">
 
-    <title>
-      Portfolio Styleguide
-    </title>
+    <title>Portfolio Styleguide</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styleguide.css">
   </head>
 
   <body>
     <header>
-      <h1>Portfolio Styleguide</h1>
+      <h1 id="headertext">Portfolio Styleguide</h1>
     </header>
 
     <nav>
-      <ul>
-        <li><a href="">Non-Interactive Elements</a></li>
-        <li><a href="">Interactive Elements</a></li>
-        <li><a href="">Combined Elements</a></li>
+      <ul class="nav">
+        <li class="nav-item"><a href="#non-interactive">Non-Interactive Elements</a></li>
+        <li class="nav-item"><a href="#interactive">Interactive Elements</a></li>
+        <li class="nav-item"><a href="#combined">Combined Elements</a></li>
       </ul>
     </nav>
 
     <section>
-      <h2>Non-Interactive Elements</h2>
-      <section>
+      <h2 id="non-interactive">Non-Interactive Elements</h2>
+      <section class="oneelement">
         <h3>Headings</h3>
-        <h4>CSS Selectors</h4>
-          <p></p>
-        <h4>Sample Code</h4>
-          <p></p>
-        <h4>Rendered Element</h4>
-          <h1>HEADING H1</h1>
-          <h2>Heading h2</h2>
-          <h3>Heading h3</h3>
+        <h4 class="codetitle">CSS Selectors</h4>
+          <code>.mainheading, .subheading, .thirdheading</code>
+        <h4 class="codetitle">Sample Code</h4>
+          <code>&lt;h1 class="mainheading"&gt;HEADING H1&lt;/h1&gt;</code>
+          <code>&lt;h2 class="subheading"&gt;Heading h2&lt;/h2&gt;</code>
+          <code>&lt;h3 class="thirdheading"&gt;Heading h3&lt;/h3&gt;</code>
+        <h4 class="codetitle">Rendered Element</h4>
+          <h1 class="mainheading">HEADING H1</h1>
+          <h2 class="subheading">Heading h2</h2>
+          <h3 class="thirdheading">Heading h3</h3>
       </section>
 
-      <section>
+      <section class="oneelement">
         <h3>Paragraph</h3>
-        <h4>CSS Selectors</h4>
-          <p></p>
-        <h4>Sample Code</h4>
-          <p></p>
-        <h4>Rendered Element</h4>
-          <p></p>
+        <h4 class="codetitle">CSS Selectors</h4>
+          <code>.paragraph</code>
+        <h4 class="codetitle">Sample Code</h4>
+          <code>&lt;p class="paragraph"&gt;Hello! My name is Moran Zhu.&lt;/p&gt;</code>
+        <h4 class="codetitle">Rendered Element</h4>
+          <p class="paragraph">Hello! My name is Moran Zhu. I am a passionate senior design student at Simon Fraser University. With my academic background, I have the knowledge and experiences in UX, UI and print design. I also dabble in programming, with intermediate level of proficiency of HTML/CSS and Java. I believe design is for people and their everyday lives, thus I am constantly observing and learning from the people and objects around me.
+</p>
+      </section>
+
+      <section class="oneelement">
+        <h3>In-text emphasize</h3>
+        <h4 class="codetitle">CSS Selectors</h4>
+          <code>.emphasized</code>
+        <h4 class="codetitle">Sample Code</h4>
+          <code>&lt;em class="emphasized"&gt;important thing&lt;/em&gt;</code>
+        <h4 class="codetitle">Rendered Element</h4>
+          <p class="paragraph">This is an <em class="emphasized">important thing</em>.</p>
       </section>
 
     </section>
 
     <section>
-      <h2>Interactive Elements</h2>
-      <section>
+      <h2 id="interactive">Interactive Elements</h2>
+      <section class="oneelement">
         <h3>In-text Link</h3>
-        <h4>CSS Selectors</h4>
-          <p></p>
-        <h4>Sample Code</h4>
-          <p></p>
-        <h4>Rendered Element</h4>
+        <h4 class="codetitle">CSS Selectors</h4>
+          <code>.intext_link</code>
+        <h4 class="codetitle">Sample Code</h4>
+          <code>&lt;a class="intext_link" href="#"&gt;in-text link&lt;/a&gt;</code>
+        <h4 class="codetitle">Rendered Element</h4>
+          <p class="paragraph">This is an <a class="intext_link" href="#">in-text link</a>.</p>
+      </section>
+
+      <section class="oneelement">
+        <h3>Navigation Button</h3>
+        <h4 class="codetitle">CSS Selectors</h4>
+          <code>.nav-button</code>
+        <h4 class="codetitle">Sample Code</h4>
+          <code>&lt;a class="nav-button" href="#"&gt;projects&lt;/a&gt;</code>
+        <h4 class="codetitle">Rendered Element</h4>
+          <a class="nav-button" href="#">projects</a>
+      </section>
+
+    </section>
+
+    <section>
+      <h2 id="combined">Combined Elements</h2>
+      <section class="oneelement">
+        <h3>In-text Link</h3>
+        <h4 class="codetitle">CSS Selectors</h4>
+          <code> </code>
+        <h4 class="codetitle">Sample Code</h4>
+          <code> </code>
+        <h4 class="codetitle">Rendered Element</h4>
           <p>This is a <a href="">in-text link</a>.</p>
       </section>
 
-      <section>
+      <section class="oneelement">
         <h3>Navigation Button</h3>
-        <h4>CSS Selectors</h4>
-          <p></p>
-        <h4>Sample Code</h4>
-          <p></p>
-        <h4>Rendered Element</h4>
+        <h4 class="codetitle">CSS Selectors</h4>
+          <code> </code>
+        <h4 class="codetitle">Sample Code</h4>
+          <code> </code>
+        <h4 class="codetitle">Rendered Element</h4>
           <a>PROJECTS</a>
       </section>
 
