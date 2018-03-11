@@ -1,0 +1,88 @@
+#main{
+  width: 100%;
+  position: relative;
+}
+.cover-bg{
+  max-width: 100%;
+  max-height: 100%;
+
+}
+.fullimage{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+nav{
+  z-index: 2;
+  margin-top: 1.5em;
+  margin-left: 3%;
+  margin-right: 3%;
+  position: fixed;
+  width: 94%;
+  height: 1.4em;
+  overflow: hidden;
+}
+.nav-button{
+  color: #333;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 0.15em;
+  padding-left: 0.05em;
+  -webkit-transition: color 0.2s ease-out;
+  -ms-transition:color 0.2s ease-out;
+}
+.nav-button:hover{
+  color: #354593;
+  border-bottom: 0.1em solid #354593;
+}
+.nav-left{
+  float: left;
+}
+.nav-right{
+  float: right;
+}
+#projects-button{
+  margin-right: 2em;
+}
+
+.main-content{
+  z-index: 2;
+  width: 46%;
+  margin: auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: absolute;
+  top: 21%;
+  right: 26.5%;
+}
+#starter{
+  color: #4B4E7A;
+  font-size: 1.3em;
+  line-height: 1.65em;
+  font-weight: 600;
+}
+.intro-p{
+  margin-top: 0;
+  color: #4B4E7A;
+  line-height: 1.7em;
+}
+
+@media (max-width:50.25em){
+  .cover-bg{
+    width: auto;
+    height: 100vh;
+    max-height: 837px;
+    min-height: 670px;
+    overflow: hidden;
+  }
+  .fullimage{
+    width: auto;
+    overflow:hidden;
+
+  }
+}

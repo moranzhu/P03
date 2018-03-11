@@ -9,8 +9,72 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage();
+		});
+	</script>
 
   </head>
   <body>
+    <div id="fullpage">
+      <div class="section">
+        <div class="nav">
+          <div class="nav-left">
+            <a class="nav-button" href="#">MORAN</a>
+          </div>
+          <div class="nav-right">
+            <a class="nav-button" id="projects-button" href="#projects">projects</a>
+            <a class="nav-button" href="aboutMoran.html">about</a>
+          </div>
+        </div>
+        <img class="fullimage" src="img/mainbackground.png" alt="purple background with colouful rounded shapes"/>
+        <div class="main-content">
+          <h1 class="mainheading">HELLO! My name is Moran.</h1>
+          <div class="intro">
+            <p class="intro-p">I am a passionate senior UX and Visual Design student based in Vancouver, BC.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="nav">
+          <div class="nav-left">
+            <a class="nav-button darkbutton" href="#">MORAN</a>
+          </div>
+          <div class="nav-right">
+            <a class="nav-button darkbutton" id="projects-button" href="#projects">projects</a>
+            <a class="nav-button darkbutton"  href="aboutMoran.html">about</a>
+          </div>
+        </div>
+        <div id="projects">
+        <div class="projects-left">
+          <img class="halfimage" src="img/enrouteCover.png" alt="green background with a hand holding an iphone"/>
+        </div>
+        <div class="projects-right">
+          <a href="enroute.html"><div class="projecttitle" id="selected">
+            <h2 class="subheading">ENROUTE</h2>
+            <h3 class="thirdheading">Mobile Application | UI+UX</h3>
+          </div></a>
+          <a href="#"><div class="projecttitle">
+            <h2 class="subheading">AROMA ESPRESSO BAR</h2>
+            <h3 class="thirdheading">Mobile Application | UI+UX</h3>
+          </div></a>
+          <a href="#"><div class="projecttitle" id="lastproject">
+            <h2 class="subheading">ALPHONSE MUCHA POSTER</h2>
+            <h3 class="thirdheading">Graphic Design</h3>
+          </div></a>
+      </div>
+    </div>
+    </div>
+
+    </div>
   </body>
 </html>

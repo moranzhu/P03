@@ -1,0 +1,77 @@
+nav{
+  margin-top: 1.5em;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 94%;
+  height: 1.4em;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+.nav-button{
+  color: #333;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 0.15em;
+  padding-left: 0.05em;
+  -webkit-transition: color 0.2s ease-out;
+  -ms-transition:color 0.2s ease-out;
+}
+.nav-button:hover{
+  color: #354593;
+  border-bottom: 0.1em solid #354593;
+}
+.nav-left{
+  float: left;
+}
+.nav-right{
+  float: right;
+}
+#projects-button{
+  margin-right: 2em;
+}
+
+.project-intro{
+  width: 100%;
+  margin-top: 5em;
+}
+.intro-img{
+  width: 58em;
+  max-width: 90%;
+  height: auto;
+  margin: auto;
+  position: relative;
+}
+.title-img{
+  width: 100%;
+}
+.intro-text{
+  position: absolute;
+  right: 5%;
+  top: 35%;
+  width: 16.4em;
+}
+.project-name{
+  color: #FAFAFA;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 0.4em;
+  letter-spacing: 0.08em;
+}
+.project-description{
+  color: #FAFAFA;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  margin-top: 0;
+  margin-bottom: 2em;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+}
+.project-deatil{
+  color: #FAFAFA;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 0;
+  margin-top: 0.7em;
+  letter-spacing: 0.05em;
+}

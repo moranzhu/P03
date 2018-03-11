@@ -1,0 +1,143 @@
+#main{
+  width: 100%;
+  position: relative;
+}
+.cover-bg{
+  max-width: 100%;
+  max-height: 100%;
+
+}
+.fullimage{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+.nav{
+  z-index: 2;
+  margin-top: 2em;
+  margin-left: 3%;
+  margin-right: 3%;
+  position: absolute;
+  width: 94%;
+  height: 1.4em;
+  overflow: hidden;
+}
+.nav-button{
+  color: #FAFAFA;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 0.15em;
+  padding-left: 0.05em;
+  -webkit-transition: color 0.2s ease-out;
+  -ms-transition:color 0.2s ease-out;
+}
+.darkbutton{
+  color: #333;
+}
+.nav-button:hover{
+  color: #F4D8BD;
+  border-bottom: 0.1em solid #F4D8BD;
+}
+.darkbutton:hover{
+  color: #4B4E7A;
+  border-bottom: 0.1em solid #4B4E7A;
+}
+.nav-left{
+  float: left;
+}
+.nav-right{
+  float: right;
+}
+#projects-button{
+  margin-right: 2em;
+}
+
+
+.main-content{
+  z-index: 2;
+  width: 28em;
+  margin: auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: absolute;
+  top: 28%;
+  left: 32%;
+  right: 31%;
+}
+.mainheading{
+  font-size: 1.7em;
+  letter-spacing: 0.06em;
+  color: #FAFAFA;
+  margin-bottom: 0.8em;
+}
+.intro{
+  width: 100%;
+}
+.intro-p{
+  margin: 0;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #FAFAFA;
+}
+
+#projects{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: -0.2em;
+  align-items: center;
+}
+.projects-left{
+  width: 60%;
+}
+.halfimage{
+  width: 100%;
+}
+.projects-right{
+  margin-left: 10%;
+  width: 30%;
+}
+.projecttitle{
+  margin-bottom: 3em;
+}
+#lastproject{
+  margin-bottom: 0;
+}
+.subheading{
+  color: #B2B2B2;
+  font-size: 1.3em;
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+.thirdheading{
+  color: #B2B2B2;
+  font-size: 1em;
+  font-weight: 100;
+  margin: 0;
+}
+#selected h2, #selected h3{
+  color: #333;
+}
+.subheading:hover, .thirdheading:hover{
+  color: #333;
+}
+
+@media (max-width:50.25em){
+  .cover-bg{
+    width: auto;
+    height: 100vh;
+    max-height: 837px;
+    min-height: 670px;
+    overflow: hidden;
+  }
+  .fullimage{
+    width: auto;
+    overflow:hidden;
+
+  }
+}
