@@ -17,8 +17,12 @@
     <script src="jquery.fullPage.js"></script>
 
     <script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage();
+    $(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage'],
+				sectionsColor: ['#4B4E7A', '#FDFDFD'],
+				responsiveWidth: 1000
+			});
 		});
 	</script>
 
@@ -28,10 +32,10 @@
       <div class="section">
         <div class="nav">
           <div class="nav-left">
-            <a class="nav-button" href="#">MORAN</a>
+            <a class="nav-button" href="index.html#firstPage">MORAN</a>
           </div>
           <div class="nav-right">
-            <a class="nav-button" id="projects-button" href="#projects">projects</a>
+            <a class="nav-button" id="projects-button" href="index.html#secondPage">projects</a>
             <a class="nav-button" href="aboutMoran.html">about</a>
           </div>
         </div>
@@ -47,10 +51,10 @@
       <div class="section">
         <div class="nav">
           <div class="nav-left">
-            <a class="nav-button darkbutton" href="#">MORAN</a>
+            <a class="nav-button darkbutton" href="index.html#firstPage">MORAN</a>
           </div>
           <div class="nav-right">
-            <a class="nav-button darkbutton" id="projects-button" href="#projects">projects</a>
+            <a class="nav-button darkbutton" id="projects-button" href="index.html#secondPage">projects</a>
             <a class="nav-button darkbutton"  href="aboutMoran.html">about</a>
           </div>
         </div>
