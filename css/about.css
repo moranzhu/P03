@@ -1,14 +1,17 @@
+body,html{
+  height: 100%;
+}
 #main{
   width: 100%;
-  position: relative;
+  position: fixed;
+  top: 20vh;
 }
 .cover-bg{
-  max-width: 100%;
-  max-height: 100%;
-
-}
-.fullimage{
-  width: 100%;
+  background-image: url('../img/aboutbackground.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 a{
   text-decoration: none;
@@ -50,15 +53,12 @@ nav{
 }
 
 .main-content{
-  z-index: 2;
-  width: 46%;
+  width: 40.5em;
+  max-width: 66%;
   margin: auto;
   display:flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  position: absolute;
-  top: 21%;
-  right: 26.5%;
 }
 #starter{
   color: #4B4E7A;
@@ -72,17 +72,19 @@ nav{
   line-height: 1.7em;
 }
 
-@media (max-width:50.25em){
-  .cover-bg{
-    width: auto;
-    height: 100vh;
-    max-height: 837px;
-    min-height: 670px;
-    overflow: hidden;
+@media (max-width:58.55em){
+  #main{
+    top: 16vh;
   }
-  .fullimage{
-    width: auto;
-    overflow:hidden;
+  .main-content{
+  width: 27.3em;
+  }
+}
 
+@media (max-width:40.7em){
+  .main-content{
+    width: 28em;
+    max-width: 90%;
+    font-size: 2.5vw;
   }
 }

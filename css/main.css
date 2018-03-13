@@ -1,5 +1,9 @@
-.fullimage{
+.cover-bg{
+  background-image: url('../img/mainbackground.png');
   height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 a{
   text-decoration: none;
@@ -50,18 +54,18 @@ a{
   margin-right: 2em;
 }
 
-
+#main{
+  width: 100%;
+  position: fixed;
+  top: 27vh;
+}
 .main-content{
   z-index: 2;
-  width: 28em;
+  width: 24.2em;
   margin: auto;
   display:flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  position: absolute;
-  top: 28%;
-  left: 32%;
-  right: 31%;
 }
 .mainheading{
   font-size: 1.7em;
@@ -121,17 +125,9 @@ a{
   color: #333;
 }
 
-@media (max-width:50.25em){
-  .cover-bg{
-    width: auto;
-    height: 100vh;
-    max-height: 837px;
-    min-height: 670px;
-    overflow: hidden;
-  }
-  .fullimage{
-    width: auto;
-    overflow:hidden;
-
+@media (max-width:40.7em){
+  .main-content{
+    width: 25.5em;
+    font-size: 2.45vw;
   }
 }
