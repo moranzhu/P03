@@ -17,7 +17,7 @@
     </header>
 
     <nav>
-      <ul class="nav">
+      <ul class="navigation">
         <li class="nav-item"><a href="#non-interactive">Non-Interactive Elements</a></li>
         <li class="nav-item"><a href="#interactive">Interactive Elements</a></li>
         <li class="nav-item"><a href="#combined">Combined Elements</a></li>
@@ -89,25 +89,34 @@
 
     <section>
       <h2 id="combined">Combined Elements</h2>
+      <h3>Navigation</h3>
+      <h4 class="codetitle">CSS Selectors</h4>
+        <code>.nav, .nav-left, ,nav-right, .nav-button, .nav-button:hover, #projects-button</code>
+      <h4 class="codetitle">Sample Code</h4>
+        <code>&lt;div class="nav"&gt;&lt;div class="nav-left"&gt;&lt;a class="nav-button" href="#"&gt;MORAN&lt;/a&gt;&lt;/div&gt;&lt;div class="nav-right"&gt;&lt;a class="nav-button" id="projects-button" href="#"&gt;projects&lt;/a&gt;&lt;a class="nav-button" href="#"&gt;about&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;</code>
+      <h4 class="codetitle">Rendered Element</h4>
       <section class="oneelement">
-        <h3>In-text Link</h3>
-        <h4 class="codetitle">CSS Selectors</h4>
-          <code> </code>
-        <h4 class="codetitle">Sample Code</h4>
-          <code> </code>
-        <h4 class="codetitle">Rendered Element</h4>
-          <p>This is a <a href="">in-text link</a>.</p>
+        <div class="nav">
+          <div class="nav-left">
+            <a class="nav-button" href="index.html#firstPage">MORAN</a>
+          </div>
+          <div class="nav-right">
+            <a class="nav-button" id="projects-button" href="index.html#secondPage">projects</a>
+            <a class="nav-button"  href="aboutMoran.html">about</a>
+          </div>
+        </div>
+        <div class="nav" id="darknav">
+          <div class="nav-left">
+            <a class="nav-button darkbutton" href="index.html#firstPage">MORAN</a>
+          </div>
+          <div class="nav-right">
+            <a class="nav-button darkbutton" id="projects-button" href="index.html#secondPage">projects</a>
+            <a class="nav-button darkbutton"  href="aboutMoran.html">about</a>
+          </div>
+        </div>
       </section>
 
-      <section class="oneelement">
-        <h3>Navigation Button</h3>
-        <h4 class="codetitle">CSS Selectors</h4>
-          <code> </code>
-        <h4 class="codetitle">Sample Code</h4>
-          <code> </code>
-        <h4 class="codetitle">Rendered Element</h4>
-          <a>PROJECTS</a>
-      </section>
+
 
     </section>
 

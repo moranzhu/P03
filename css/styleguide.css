@@ -15,7 +15,7 @@ nav{
   width: 100%;
   margin-bottom: 2em;
 }
-.nav{
+.navigation{
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -38,6 +38,7 @@ nav{
 
 section{
   margin-left: 2em;
+  margin-right: 2em;
   margin-bottom: 1em;
 }
 h2{
@@ -63,7 +64,7 @@ code{
   padding: 0;
   margin: 0;
   margin-bottom: 1em;
-  font-size: 1.4em;
+  font-size: 1.7em;
   letter-spacing: 0.06em;
 }
 .subheading{
@@ -72,13 +73,14 @@ code{
   margin-bottom: 1em;
   border: none;
   font-size: 1.3em;
+  font-weight: 600;
 }
 .thirdheading{
   padding: 0;
   margin: 0;
   margin-bottom: 1em;
-  font-size: 1.1em;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 100;
 }
 
 .paragraph{
@@ -99,22 +101,52 @@ code{
   font-weight: 600;
 }
 .nav-button{
-  font-size: 1.1em;
-  font-weight: 600;
+  font-size: 1em;
+  font-weight: 500;
   color: #333;
-  padding-bottom: 0.1em;
-  padding-left: 0.15em;
+  padding-bottom: 0.15em;
+  padding-left: 0.05em;
   text-decoration: none;
-  -webkit-transition: color 0.3s ease-out;
-  -ms-transition:color 0.3s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+  -ms-transition:color 0.2s ease-out;
 }
 .nav-button:hover{
-  color: #666;
-  border-bottom: 0.1em solid #666;
+  color: #4B4E7A;
+  border-bottom: 0.1em solid #4B4E7A;
+}
+
+.nav{
+  margin: 0;
+  margin-top: 1.5em;
+  width: 100%;
+  height: 4.3em;
+  overflow: hidden;
+  background-color: #F9F9F9;
+}
+#darknav{background-color: #4B4E7A;}
+.nav-left{
+  margin-left: 3%;
+  margin-top: 1.5em;
+  float: left;
+}
+.darkbutton{
+  color: #FAFAFA;
+}
+.darkbutton:hover{
+  color: #F4D8BD;
+  border-bottom: 0.1em solid #F4D8BD;
+}
+.nav-right{
+  margin-right: 3%;
+  margin-top: 1.5em;
+  float: right;
+}
+#projects-button{
+  margin-right: 2em;
 }
 
 @media (max-width:43.8em) {
-  .nav{
+  .navigation{
     justify-content: center;
   }
   .nav-item{
