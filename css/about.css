@@ -83,8 +83,25 @@ nav{
 
 @media (max-width:40.7em){
   .main-content{
+    font-size: 2.5vw;
+    width:28em;
+    max-width: 82%;
+  }
+}
+@media (max-width:25em){
+  .cover-bg{
+    background-image: url('../img/aboutbackground_mobile.png');
+  }
+  .main-content{
+    font-size: 2.8vw;
+    max-width: 86%;
+  }
+}
+
+/* @media (max-width:40.7em){
+  .main-content{
     width: 28em;
     max-width: 90%;
     font-size: 2.5vw;
   }
-}
+} */

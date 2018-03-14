@@ -61,11 +61,16 @@ a{
 }
 .main-content{
   z-index: 2;
-  width: 24.2em;
+  width: 100%;
   margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.content-holder{
   display:flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  width: 24.2em;
 }
 .mainheading{
   font-size: 1.7em;
@@ -87,7 +92,6 @@ a{
   width: 100%;
   height: 100%;
   display: flex;
-  margin-top: -0.2em;
   align-items: center;
 }
 .projects-left{
@@ -125,9 +129,18 @@ a{
   color: #333;
 }
 
-@media (max-width:40.7em){
-  .main-content{
-    width: 25.5em;
-    font-size: 2.45vw;
+@media (max-width:34em){
+  .content-holder{
+    font-size: 2.9vw;
+    width: 72%;
+  }
+}
+@media (max-width:25em){
+  .cover-bg{
+    background-image: url('../img/mainbackground_mobile.png');
+  }
+  .content-holder{
+    font-size: 3.1vw;
+    width: 76.6%;
   }
 }
