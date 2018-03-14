@@ -112,6 +112,24 @@ nav{
     margin-top: 0.3em;
   }
 }
+
+.project-idea{
+  width: 50.6%;
+  margin: auto;
+  margin-top: 4em;
+}
+.subheading{
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #6DB279;
+}
+.paragraph{
+  width: 100%;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+
 @media (max-width:28em){
   .project-intro{
     margin-top:2em;
