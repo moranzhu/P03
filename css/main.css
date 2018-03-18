@@ -106,26 +106,28 @@ a{
 }
 .projecttitle{
   margin-bottom: 3em;
+  height: auto;
 }
 #lastproject{
   margin-bottom: 0;
 }
 .subheading{
-  color: #B2B2B2;
   font-size: 1.3em;
   margin: 0;
   margin-bottom: 0.4em;
 }
 .thirdheading{
-  color: #B2B2B2;
   font-size: 1em;
   font-weight: 100;
   margin: 0;
 }
+.project-link{
+  color: #B2B2B2;
+}
 #selected h2, #selected h3{
   color: #333;
 }
-.subheading:hover, .thirdheading:hover{
+.project-link:hover, .project-link:focus{
   color: #333;
 }
 
