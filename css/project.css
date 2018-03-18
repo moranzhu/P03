@@ -35,6 +35,9 @@ nav{
   width: 100%;
   margin-top: 5em;
 }
+#aroma{
+  margin-top: 8em;
+}
 .intro-img{
   width: 58em;
   max-width: 90%;
@@ -79,6 +82,91 @@ nav{
   letter-spacing: 0.05em;
 }
 
+.shorterP, .shortP, .middleP, .longP{
+  max-width: 70%;
+  margin:auto;
+}
+.shorterP{
+  width: 45.1em;
+}
+.shortP{
+  width: 45.7em;
+}
+.middleP{
+  width: 46.1em;
+}
+.longP{
+  width: 46.5em;
+  margin-bottom: 5em;
+}
+.firstP{
+  margin-top: 8em;
+}
+
+.subheading{
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #6DB279;
+}
+.paragraph{
+  width: 100%;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.personas, .interfaceTwo, .prototype-gif{
+  width: 58em;
+  max-width: 70%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 4em;
+}
+
+.firstImg{
+  margin-right: 3em;
+}
+
+.journeymap, .appflow{
+  width: 62em;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 4em;
+}
+
+.appflow{
+  margin-top: -1.5em;
+}
+
+.interfaceOne{
+  width: 40em;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 2.5em;
+}
+.persona img, .journeymap img, .appflow img, .interfaceOne img, .interfaceImg img, .gif img, .aromainterfaceImg img{
+  width: 100%;
+}
+.interfaceTwo, .prototype-gif{
+  flex-wrap: wrap;
+}
+.interfaceImg{
+  width: 45%;
+}
+.gif{
+  width: 26%;
+}
+.aromainterfaceImg{
+  width: 50%;
+}
+#aromaprototype{
+  width: 20%;
+  margin: auto;
+}
+#aromaprototype img{
+  width: 100%;
+}
+
+
 @media (max-width:64.4em){
   .intro-text{
     right: 4%;
@@ -111,22 +199,6 @@ nav{
   .project-deatil{
     margin-top: 0.3em;
   }
-}
-
-.project-idea{
-  width: 50.6%;
-  margin: auto;
-  margin-top: 4em;
-}
-.subheading{
-  font-size: 1.3em;
-  font-weight: 600;
-  color: #6DB279;
-}
-.paragraph{
-  width: 100%;
-  font-size: 1.1em;
-  line-height: 1.5em;
 }
 
 
