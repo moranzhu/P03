@@ -123,6 +123,7 @@ a{
 }
 .project-link{
   color: #B2B2B2;
+  cursor: pointer;
 }
 #selected h2, #selected h3{
   color: #333;
