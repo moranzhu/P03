@@ -89,8 +89,7 @@ code{
   width: 36em;
 }
 .emphasized{
-  font-style: italic;
-  font-weight: 600;
+  font-style: normal;
   color: #7086FB;
 }
 .intext_link{

@@ -71,6 +71,15 @@ nav{
   color: #4B4E7A;
   line-height: 1.7em;
 }
+.empasize{
+  font-style: normal;
+  color: #7086FB;
+}
+#styleguide{
+  position: fixed;
+  right: 1.5em;
+  bottom: 1.5em;
+}
 
 @media (max-width:58.55em){
   #main{
