@@ -113,6 +113,11 @@ nav{
   font-size: 1.1em;
   line-height: 1.5em;
 }
+.bookparagraph{
+  width: 100%;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
 
 .personas, .interfaceTwo, .prototype-gif{
   width: 52em;
@@ -270,7 +275,7 @@ nav{
     font-size: 95%;
   }
   .personas, .interfaceTwo, .prototype-gif,.journeymap, .appflow,.interfaceOne{
-    max-width: 100%;
+    max-width: 96%;
   }
   .firstImg{
     margin-right: 0;
@@ -284,6 +289,11 @@ nav{
   }
   .book{
     width: 100%;
+  }
+  .bookparagraph{
+    width: 90%;
+    margin:auto;
+    margin-top: 0.5em;
   }
 
 }
