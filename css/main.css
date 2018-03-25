@@ -125,9 +125,7 @@ a{
   color: #B2B2B2;
   cursor: pointer;
 }
-/* #enroute h2, #enroute h3{
-  color: #333;
-} */
+
 .project-link:hover, .project-link:focus{
   color: #333;
 }

@@ -169,6 +169,19 @@ nav{
   width: 100%;
 }
 
+.book{
+  width: 60%;
+  margin: auto;
+  margin-bottom: 7em;
+}
+#firstbook{
+  margin-top: 8.5em;
+}
+.bookImage{
+  width: 100%;
+  height: auto;
+}
+
 
 @media (max-width:64.4em){
   .intro-text{
@@ -217,6 +230,13 @@ nav{
   .aromainterfaceImg{
     width: 100%;
   }
+  .book{
+    width: 76%;
+    margin-bottom: 4em;
+  }
+  #firstbook{
+    margin-top:5em;
+  }
 }
 
 
@@ -261,6 +281,9 @@ nav{
   }
   #aromaprototype{
     width: 60%;
+  }
+  .book{
+    width: 100%;
   }
 
 }
