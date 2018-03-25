@@ -125,11 +125,15 @@ a{
   color: #B2B2B2;
   cursor: pointer;
 }
-#selected h2, #selected h3{
+/* #enroute h2, #enroute h3{
   color: #333;
-}
+} */
 .project-link:hover, .project-link:focus{
   color: #333;
+}
+.selected{
+  color: #333;
+  cursor: pointer;
 }
 
 @media (max-width:34em){
