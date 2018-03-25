@@ -141,11 +141,18 @@ a{
   }
 }
 @media (max-width:25em){
+  .nav{
+    margin-top: 1em;
+    font-size: 95%;
+  }
+  #projects-button{
+    margin-right: 1em;
+  }
   .cover-bg{
     background-image: url('../img/mainbackground_mobile.png');
   }
   .content-holder{
     font-size: 3.1vw;
-    width: 76.6%;
+    width: 77.5%;
   }
 }
