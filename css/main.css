@@ -50,7 +50,7 @@ a{
 .nav-right{
   float: right;
 }
-#projects-button{
+.projects-button{
   margin-right: 2em;
 }
 
@@ -168,7 +168,7 @@ width: 100%;
     margin-top: 1em;
     font-size: 95%;
   }
-  #projects-button{
+  .projects-button{
     margin-right: 1em;
   }
   .cover-bg{
