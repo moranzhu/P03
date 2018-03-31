@@ -1,7 +1,9 @@
 "use strict";
 
 document.getElementById("enroute").onmouseover = function(){
-  document.getElementById("cover").src="img/enrouteCover.png";
+  document.getElementById("enrouteCover").style.display = "block";
+  document.getElementById("aromaCover").style.display = "none";
+  document.getElementById("bookCover").style.display = "none";
 
   var aroma = document.getElementById("aroma");
   aroma.style.color = "#B2B2B2";
@@ -11,7 +13,9 @@ document.getElementById("enroute").onmouseover = function(){
   book.style.color = "#B2B2B2";
 }
 document.getElementById("aroma").onmouseover = function(){
-  document.getElementById("cover").src="img/aromaCover.png";
+  document.getElementById("aromaCover").style.display = "block";
+  document.getElementById("enrouteCover").style.display = "none";
+  document.getElementById("bookCover").style.display = "none";
 
   var aroma = document.getElementById("aroma");
   aroma.style.color = "#333";
@@ -21,7 +25,9 @@ document.getElementById("aroma").onmouseover = function(){
   book.style.color = "#B2B2B2";
 }
 document.getElementById("book").onmouseover = function(){
-  document.getElementById("cover").src="img/bookCover.png";
+  document.getElementById("aromaCover").style.display = "none";
+  document.getElementById("enrouteCover").style.display = "none";
+  document.getElementById("bookCover").style.display = "block";
 
   var aroma = document.getElementById("aroma");
   aroma.style.color = "#B2B2B2";

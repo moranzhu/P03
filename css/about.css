@@ -97,14 +97,20 @@ nav{
     max-width: 82%;
   }
 }
-@media (max-width:25em){
+@media (max-width:28em){
   nav{
-    margin-top: 1em;
-    font-size: 95%;
+    margin-top: 1.1em;
+    font-size: 81%;
   }
   #projects-button{
     margin-right: 1em;
   }
+}
+@media (max-width:25em){
+  nav{
+    margin-top: 1.1em;
+  }
+
   .cover-bg{
     background-image: url('../img/aboutbackground_mobile.png');
   }
