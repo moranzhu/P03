@@ -1,45 +1,72 @@
 // "use strict";
 const mq = window.matchMedia("(min-width:720px)");
-if(mq.matches){
-      document.getElementById("enroute").onmouseover = function(){
-        document.getElementById("enrouteCover").style.display = "block";
-        document.getElementById("aromaCover").style.display = "none";
-        document.getElementById("bookCover").style.display = "none";
 
-        var aroma = document.getElementById("aroma");
-        aroma.style.color = "#B2B2B2";
-        var enroute = document.getElementById("enroute");
-        enroute.style.color = "#333";
-        var book = document.getElementById("book");
-        book.style.color = "#B2B2B2";
-      }
-      document.getElementById("aroma").onmouseover = function(){
-        document.getElementById("aromaCover").style.display = "block";
-        document.getElementById("enrouteCover").style.display = "none";
-        document.getElementById("bookCover").style.display = "none";
+var aroma = document.getElementById("aroma");
+var enroute = document.getElementById("enroute");
+var book = document.getElementById("book");
 
-        var aroma = document.getElementById("aroma");
-        aroma.style.color = "#333";
-        var enroute = document.getElementById("enroute");
-        enroute.style.color = "#B2B2B2";
-        var book = document.getElementById("book");
-        book.style.color = "#B2B2B2";
-      }
-      document.getElementById("book").onmouseover = function(){
-        document.getElementById("aromaCover").style.display = "none";
-        document.getElementById("enrouteCover").style.display = "none";
-        document.getElementById("bookCover").style.display = "block";
+var enrouteCover = document.getElementById("enrouteCover");
+var aromaCover = document.getElementById("aromaCover");
+var bookCover = document.getElementById("bookCover");
 
-        var aroma = document.getElementById("aroma");
-        aroma.style.color = "#B2B2B2";
-        var enroute = document.getElementById("enroute");
-        enroute.style.color = "#B2B2B2";
-        var book = document.getElementById("book");
-        book.style.color = "#333";
+var mouseOver = function (elementId) {
+
+  enrouteCover.style.display = "none";
+  aromaCover.style.display = "none";
+  bookCover.style.display = "none";
+
+  aroma.style.color = "#B2B2B2";
+  enroute.style.color = "#B2B2B2";
+  book.style.color = "#B2B2B2";
+
+  if (elementId != null){
+    document.getElementById(elementId + "Cover").style.display = "block";
+    document.getElementById(elementId).style.color = "#333";
+  }
+}
+
+function reset() {
+    aromaCover.removeAttribute("style");
+    enrouteCover.removeAttribute("style");
+    bookCover.removeAttribute("style");
+
+    aroma.removeAttribute("style");
+    enroute.removeAttribute("style");
+    book.removeAttribute("style");
+
+    $("#enroute").off("mouseover");
+    $("#book").off("mouseover");
+    $("#aroma").off("mouseover");
+}
+
+
+
+function mouseOverChange() {
+
+  if(mq.matches){
+    /**
+    * TODO: show projects-right (display: bloc)
+    *       and hide project descriptions on projectCovers
+    */
+          $("#enroute").on("mouseover", function() {
+          mouseOver("enroute");
+        });
+        $("#aroma").on("mouseover", function() {
+          mouseOver("aroma");
+        });
+        $("#book").on("mouseover", function() {
+          mouseOver("book");
+        });
+      }else{
+        /**
+        * TODO: show project descriptions on projectCovers
+        *       and hide projects-right
+        */
+        reset();
       }
-    }else{
-      
-    }
+}
+
+mouseOverChange();
 
 
 // if(window.matchMedia("(min-width:720px)")){

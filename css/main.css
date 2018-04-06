@@ -1,3 +1,7 @@
+body {
+   min-width: 320px;
+}
+
 .cover-bg{
   background-image: url('../img/mainbackground.png');
   height: 100%;
@@ -112,12 +116,11 @@ width: 100%;
   display: block;
 }
 .projecttitle{
-  margin-bottom: 3em;
+  padding-bottom: 1em;
+  padding-top: 1em;
   height: auto;
 }
-#lastproject{
-  margin-bottom: 0;
-}
+
 .subheading{
   font-size: 1.3em;
   margin: 0;
@@ -182,6 +185,8 @@ width: 100%;
     color: #B2B2B2;
   }
 }
+
+
 @media (max-width:25em){
   .nav{
     margin-top: 1em;
