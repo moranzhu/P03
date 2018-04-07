@@ -59,6 +59,7 @@ nav{
   display:flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  position:relative;
 }
 #starter{
   color: #4B4E7A;
@@ -70,6 +71,7 @@ nav{
   margin-top: 0;
   color: #4B4E7A;
   line-height: 1.7em;
+  margin-bottom: 2.5em;
 }
 .empasize{
   font-style: normal;
@@ -80,6 +82,13 @@ nav{
   right: 1.5em;
   bottom: 1.5em;
 }
+#resume{
+  position: absolute;
+  right: 0.5em;
+  bottom: 0;
+  line-height: 1.7em;
+  text-decoration: underline;
+}
 
 @media (max-width:58.55em){
   #main{
@@ -87,6 +96,9 @@ nav{
   }
   .main-content{
   width: 27.3em;
+  }
+  #resume{
+    right: 1em;
   }
 }
 

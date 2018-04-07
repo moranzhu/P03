@@ -122,7 +122,9 @@ code{
   overflow: hidden;
   background-color: #F9F9F9;
 }
-#darknav{background-color: #4B4E7A;}
+#darknav{
+  background-color: #4B4E7A;
+}
 .nav-left{
   margin-left: 3%;
   margin-top: 1.5em;
@@ -140,10 +142,68 @@ code{
   margin-top: 1.5em;
   float: right;
 }
-#projects-button{
+.projectsbutton{
   margin-right: 2em;
 }
 
+.project-intro{
+  width: 100%;
+  margin-top: 2em;
+}
+#aroma{
+  margin-top: 3em;
+}
+.intro-img{
+  width: 58em;
+  max-width: 90%;
+  height: auto;
+  margin: auto;
+  position: relative;
+}
+.title-img{
+  width: 100%;
+}
+#small{
+  display: none;
+}
+.intro-text{
+  position: absolute;
+  right: 5%;
+  top: 35%;
+  width: 16.4em;
+}
+.project-name{
+  color: #FAFAFA;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 0.4em;
+  margin-top: 0.3em;
+  letter-spacing: 0.08em;
+}
+.project-description{
+  color: #FAFAFA;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  margin-top: 0;
+  margin-bottom: 2em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+.project-deatil{
+  color: #FAFAFA;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 0;
+  margin-top: 0.7em;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width:64.4em){
+  .intro-text{
+    right: 4%;
+    font-size: 1.6vw;
+  }
+}
 @media (max-width:43.8em) {
   .navigation{
     justify-content: center;
@@ -158,9 +218,65 @@ code{
     width: 68%;
   }
 }
+@media (max-width:41.8em){
+  #aroma{
+    margin-top: 3em;
+  }
+  #small{
+    display: block;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  #large{display: none;}
+  .intro-text{
+    width:27em;
+    font-size: 90%;
+    left: 15%;
+    top:69%;
+    font-size: 2.4vw;
+  }
+  .project-description{
+    margin-bottom: 1em;
+  }
+  .project-name{
+    margin-bottom: 0.3em;
+  }
+  .project-deatil{
+    margin-top: 0.3em;
+  }
+}
 
 @media (max-width:32.5em) {
   .paragraph{
     width: 90%;
+  }
+}
+@media (max-width:28em) {
+  *{
+    font-size: 95%;
+  }
+  .project-intro{
+    margin-top:1.8em;
+  }
+  #aroma{
+    margin-top: 2em;
+  }
+  .intro-img{
+    max-width: 100%;
+  }
+  #small{
+    max-width: 100%;
+  }
+  .intro-text{
+    width:27em;
+    font-size: 90%;
+    left: 9%;
+    top:69%;
+    font-size: 3.1vw;
+  }
+}
+@media (max-width:25em) {
+  .projectsbutton{
+    margin-right: 1em;
   }
 }
