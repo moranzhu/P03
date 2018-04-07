@@ -67,15 +67,3 @@ function mouseOverChange() {
 }
 
 mouseOverChange();
-
-
-// if(window.matchMedia("(min-width:720px)")){
-//   addProject();
-// }
-//
-// function addProject(){
-//    var newP = document.createElement('div');
-//    newP.className = 'projects';
-//    newP.innerHTML += '<p>Hello</p>';
-//    document.getElementById('fullpage').appendChild(newP);
-// }
